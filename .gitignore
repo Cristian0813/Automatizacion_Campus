@@ -1,0 +1,17 @@
+# Entorno virtual
+env/
+venv/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Archivos sensibles
+*.xlsx
+*.log
+
+# Capturas
+screenshots/
+
+# Sistema
+.DS_Store
