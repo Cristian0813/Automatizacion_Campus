@@ -111,7 +111,11 @@ Si todo está correcto, verás `(env)` al inicio de la línea.
 Con el entorno virtual activo, ejecuta:
 
 ```bash
-pip install selenium pandas webdriver-manager openpyxl
+# Instalación de Selenium y el manejador de drivers
+pip install selenium webdriver-manager
+
+# Instalación de Pandas (para manejo de archivos Excel/CSV)
+pip install pandas openpyxl
 ```
 
 📌 Tkinter viene incluido con Python, no requiere instalación adicional.
