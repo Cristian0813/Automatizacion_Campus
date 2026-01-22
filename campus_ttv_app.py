@@ -373,8 +373,11 @@ class CampusTTVApp:
                     "NOMBRE COMPLETO": NOMBRE,
                     "CORREO": EMAIL,
                     "TELÉFONO": TELEFONO,
-                    "ESTADO": "Pendiente"
+                    "ESTADO": "Pendiente",
+                    "Soporte_Asistencia": "No",
+                    "Soporte_Certificacion": "No"
                 }
+
                 
                 try:
                     # Si no es el primer usuario, ya estamos en login por el logout anterior
@@ -489,10 +492,16 @@ class CampusTTVApp:
                     
                     self.log("✅ Proceso completado exitosamente")
                     resultado["ESTADO"] = "Exitoso"
+                    resultado["Soporte_Asistencia"] = "Sí"
+                    resultado["Soporte_Certificacion"] = "Sí"
+
                     
                 except Exception as e:
                     self.log(f"❌ ERROR: {str(e)}")
                     resultado["ESTADO"] = f"Error: {str(e)[:100]}"
+                    resultado["Soporte_Asistencia"] = "No"
+                    resultado["Soporte_Certificacion"] = "No"
+
                     
                     # Screenshot de error
                     try:
@@ -522,6 +531,7 @@ class CampusTTVApp:
             
             # Resumen
             exitosos = sum(1 for r in resultados if r["ESTADO"] == "Exitoso")
+
             self.log(f"\n{'='*80}")
             self.log("📊 RESUMEN FINAL")
             self.log(f"{'='*80}")
@@ -535,7 +545,7 @@ class CampusTTVApp:
             df_resultados = pd.DataFrame(resultados)
             archivo_resultados = os.path.join(
                 self.carpeta_screenshots.get(), 
-                f"resultados_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+                f"resultados_{datetime.now().strftime('%y%m%d_%H%M')}.xlsx"
             )
             df_resultados.to_excel(archivo_resultados, index=False)
             self.log(f"\n💾 Resultados guardados: {archivo_resultados}")
