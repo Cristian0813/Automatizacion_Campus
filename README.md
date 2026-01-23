@@ -146,8 +146,8 @@ if %errorlevel% neq 0 (
 )
 ```
 
-📌 Ajusta la ruta `ROOT_PATH` según tu equipo.
-👉 Cambia el ejecutador python Mia_app.py por el nombre que tiene el código
+* 📌 Ajusta la ruta `ROOT_PATH` según tu equipo.
+* 👉 Cambia el ejecutador python Mia_app.py por el nombre que tiene el código
 ---
 
 ## 📂 Resultados generados
