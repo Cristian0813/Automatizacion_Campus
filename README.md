@@ -137,7 +137,7 @@ echo Iniciando Campus Talento Tech Valle...
 echo Cargando entorno virtual...
 
 call "env\Scripts\activate"
-python campus_ttv_app.py
+python Mia_app.py
 
 if %errorlevel% neq 0 (
     echo.
@@ -147,7 +147,7 @@ if %errorlevel% neq 0 (
 ```
 
 📌 Ajusta la ruta `ROOT_PATH` según tu equipo.
-
+👉 Cambia el ejecutador python Mia_app.py por el nombre que tiene el código
 ---
 
 ## 📂 Resultados generados
