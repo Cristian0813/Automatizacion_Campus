@@ -1,53 +1,21 @@
-# Licencia de Uso Restringido
+MIT License
 
-**Copyright (c) 2026
-Crstian J Arias O**
+Copyright (c) 2026 Cristian Arias
 
-Todos los derechos reservados.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
----
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### 📌 Términos y condiciones
-
-Este software y su código fuente han sido desarrollados por **Crstian J Arias O** y se proporcionan únicamente para fines **educativos, institucionales y/o internos**, bajo las siguientes condiciones:
-
-1. ✅ **Uso permitido**
-
-   * Uso personal, académico o institucional.
-   * Uso interno dentro de organizaciones autorizadas.
-   * Modificación del código **únicamente para fines internos**, manteniendo esta licencia.
-
-2. ❌ **Uso no permitido**
-
-   * Distribución, venta o sublicenciamiento del software sin autorización expresa del autor.
-   * Uso comercial directo o indirecto.
-   * Publicación total o parcial del código como propio.
-   * Eliminación o alteración de esta licencia o del crédito al autor.
-
-3. 🔐 **Propiedad intelectual**
-
-   * El software es propiedad intelectual de **Crstian J Arias O**.
-   * Este proyecto no transfiere derechos de autor ni de propiedad intelectual.
-
-4. ⚠️ **Exención de responsabilidad**
-
-   * El software se proporciona **“tal cual”**, sin garantía de ningún tipo.
-   * El autor no se hace responsable por:
-
-     * Uso indebido del sistema
-     * Pérdida de datos
-     * Bloqueos de cuentas
-     * Daños directos o indirectos derivados de su uso
-
-5. 📎 **Responsabilidad del usuario**
-
-   * El usuario es responsable de cumplir con las políticas, normas y autorizaciones del sistema automatizado.
-   * El uso sin consentimiento institucional es responsabilidad exclusiva del usuario.
-
----
-
-### 📩 Contacto
-
-Para permisos especiales, distribución o uso comercial, contactar directamente al autor:
-
-**Crstian J Arias O**
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
