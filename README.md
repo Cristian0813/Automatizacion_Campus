@@ -1,25 +1,26 @@
-# 🎓 Automatizacion del Campus
+# Automatización del Campus
 
-Aplicación de escritorio desarrollada en **Python**, utilizando **Tkinter** para la interfaz gráfica y **Selenium** para la automatización web.
-Su objetivo es **automatizar el ingreso al Campus Talento Tech Valle**, recorrer los bootcamps asignados a cada usuario y generar **evidencias mediante capturas de pantalla**, tomando los usuarios desde un archivo **Excel**.
+Aplicación de escritorio desarrollada en **Python**, que utiliza **Tkinter** para la interfaz gráfica y **Selenium** para la automatización web.
+Su objetivo es automatizar el ingreso al **Campus Talento Tech Valle**, recorrer los bootcamps asignados a cada usuario y generar evidencias mediante capturas de pantalla.
+Los usuarios se cargan desde un archivo **Excel**, lo que permite procesar múltiples accesos de forma automática.
 
 ---
 
-## 🚀 Funcionalidades principales
+## Funcionalidades principales
 
-* Interfaz gráfica amigable (Tkinter)
+* Interfaz gráfica desarrollada con Tkinter
 * Lectura automática de usuarios desde Excel (`CORREO` y `DOCUMENTO`)
 * Inicio de sesión automatizado en el campus
-* Acceso al bootcamp correspondiente
-* Scroll automático de la página
-* Captura de pantalla por usuario
-* Registro detallado del proceso
+* Acceso automático al bootcamp correspondiente
+* Scroll automático de la página para cargar contenido
+* Captura de pantalla por cada usuario procesado
+* Registro detallado del proceso de ejecución
 * Generación de archivo de resultados (`resultados_procesamiento.xlsx`)
-* Ejecución segura en segundo plano (multihilo)
+* Ejecución en segundo plano mediante multihilo
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 capturapantalla_campusttv/
@@ -34,99 +35,107 @@ capturapantalla_campusttv/
 
 ---
 
-## 📊 Requisitos del archivo Excel
+## Requisitos del archivo Excel
+
+El archivo Excel debe contener las siguientes columnas:
 
 | Columna   | Descripción                 |
 | --------- | --------------------------- |
 | CORREO    | Usuario de acceso al campus |
-| DOCUMENTO | Contraseña                  |
+| DOCUMENTO | Contraseña de acceso        |
 
-📌 Los nombres de las columnas deben coincidir exactamente.
+Los nombres de las columnas deben coincidir exactamente para que el sistema pueda leerlos correctamente.
 
 ---
 
-## 🧰 Requisitos del sistema
+## Requisitos del sistema
 
 * Windows 10 o superior
 * Conexión a Internet
 * Google Chrome instalado y actualizado
+* Python 3.9 o superior
 
 ---
 
-## 🐍 Instalación de Python (PASO A PASO)
+## Instalación de Python
 
-### 1️⃣ Descargar Python
+### 1. Descargar Python
 
-1. Ingresa a: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-2. Descarga **Python 3.9 o superior**
-3. Ejecuta el instalador
+1. Ingresa a:
+   [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-### 2️⃣ Configuración IMPORTANTE durante la instalación
+2. Descarga **Python 3.9 o superior**.
 
-✔ Marca la opción **Add Python to PATH**
-✔ Luego haz clic en **Install Now**
+3. Ejecuta el instalador.
 
-📌 Esto es obligatorio para que Python funcione correctamente desde la consola.
+### 2. Configuración durante la instalación
 
-### 3️⃣ Verificar instalación
+Marca la opción:
 
-1. Abre **Símbolo del sistema (CMD)**
-2. Ejecuta:
+```
+Add Python to PATH
+```
+
+Luego haz clic en **Install Now**.
+
+Esto permite ejecutar Python desde la consola del sistema.
+
+### 3. Verificar la instalación
+
+Abre **Símbolo del sistema (CMD)** y ejecuta:
 
 ```bash
 python --version
 ```
 
-Si ves algo como `Python 3.x.x`, la instalación fue exitosa.
+Si aparece una versión de Python, la instalación fue exitosa.
 
 ---
 
-## 📦 Creación del entorno virtual
+## Creación del entorno virtual
 
-1️⃣ Abre **CMD** o **PowerShell**
-2️⃣ Ubícate en la carpeta del proyecto:
+1. Abre **CMD** o **PowerShell**.
+
+2. Ubícate en la carpeta del proyecto:
 
 ```bash
 cd C:\Ruta\Donde\Esta\capturapantalla_campusttv
 ```
 
-3️⃣ Crea el entorno virtual:
+3. Crea el entorno virtual:
 
 ```bash
 python -m venv env
 ```
 
-4️⃣ Activa el entorno virtual:
+4. Activa el entorno virtual:
 
 ```bash
 env\Scripts\activate
 ```
 
-Si todo está correcto, verás `(env)` al inicio de la línea.
+Si la activación fue correcta, aparecerá `(env)` al inicio de la línea de comandos.
 
 ---
 
-## 📚 Instalación de librerías necesarias
+## Instalación de dependencias
 
-Con el entorno virtual activo, ejecuta:
+Con el entorno virtual activo, instala las librerías necesarias:
 
 ```bash
-# Instalación de Selenium y el manejador de drivers
 pip install selenium webdriver-manager
-
-# Instalación de Pandas (para manejo de archivos Excel/CSV)
 pip install pandas openpyxl
 ```
 
-📌 Tkinter viene incluido con Python, no requiere instalación adicional.
+Tkinter viene incluido con Python, por lo que no requiere instalación adicional.
 
 ---
 
-## ▶️ Ejecución de la aplicación
+## Ejecución de la aplicación
 
-### Usando archivo `.bat` (recomendado)
+### Uso mediante archivo `.bat` (recomendado)
 
-Ejemplo de `iniciar_app.bat`:
+Ejemplo de archivo `iniciar_app.bat`:
 
 ```bat
 @echo off
@@ -146,30 +155,35 @@ if %errorlevel% neq 0 (
 )
 ```
 
-* 📌 Ajusta la ruta `ROOT_PATH` según tu equipo.
-* 👉 Cambia el ejecutador python Mia_app.py por el nombre que tiene el código
----
+Ajusta:
 
-## 📂 Resultados generados
-
-* Capturas almacenadas en `screenshots/`
-* Archivo `resultados_procesamiento.xlsx` con el estado del proceso
+* `ROOT_PATH` con la ruta correcta del proyecto.
+* `Mia_app.py` con el nombre del archivo principal de tu aplicación.
 
 ---
 
-## ⚠️ Advertencias importantes
+## Resultados generados
 
-* Automatiza accesos reales
-* Uso exclusivo Talento Tech Valle
-* No distribuir públicamente
-* Usar solo con autorización institucional
+Durante la ejecución del sistema se generan los siguientes archivos:
+
+* Capturas de pantalla almacenadas en la carpeta `screenshots/`
+* Archivo `resultados_procesamiento.xlsx` con el estado del procesamiento de cada usuario
 
 ---
 
-## 📜 Licencia
+## Advertencias
 
-Este proyecto está bajo la licencia MIT.
+* Este sistema automatiza accesos reales al campus.
+* Debe utilizarse únicamente dentro del entorno de **Talento Tech Valle**.
+* No se recomienda distribuir públicamente sin autorización institucional.
+* Utilizar únicamente con permisos de uso adecuados.
 
-**Desarrollado para Talento Tech Valle.**
+---
 
-Copyright (c) 2026 Cristian Arias
+## Licencia
+
+Este proyecto está bajo la licencia **MIT**.
+
+Desarrollado para **Talento Tech Valle**.
+
+Copyright (c) 2026 Cristian Arias.
