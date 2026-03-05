@@ -166,18 +166,10 @@ if %errorlevel% neq 0 (
 
 ---
 
-## 👨‍💻 Autor
+## 📜 Licencia
 
-**CRISTIAN J ARIAS O**
-Automatización académica y control de evidencias
+Este proyecto está bajo la licencia MIT.
 
----
+**Desarrollado para Talento Tech Valle.**
 
-Si quieres, puedo ayudarte a:
-
-✔ Crear una versión **para usuarios finales (solo doble clic)**
-✔ Generar un **instalador o .exe**
-✔ Añadir **capturas al README**
-✔ Documentar errores comunes y soluciones
-
-Solo dime 👍
+Copyright (c) 2026 Cristian Arias
