@@ -1,4 +1,4 @@
-# 🎓 Campus Talento Tech Valle – Automatización
+# 🎓 Automatizacion del Campus
 
 Aplicación de escritorio desarrollada en **Python**, utilizando **Tkinter** para la interfaz gráfica y **Selenium** para la automatización web.
 Su objetivo es **automatizar el ingreso al Campus Talento Tech Valle**, recorrer los bootcamps asignados a cada usuario y generar **evidencias mediante capturas de pantalla**, tomando los usuarios desde un archivo **Excel**.
